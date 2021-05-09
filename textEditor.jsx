@@ -41,16 +41,16 @@ const TextEditor = () => {
       ],
       imageUploader: {
         upload: file => {
-            // return 'https://res.cloudinary.com/sium/image/upload/v1620553545/kqcqwdf20pa6nhkopvq1.jpg'
+         
             console.log('file',file);
         
           return new Promise((resolve, reject) => {
            
             const formData = new FormData();
             formData.append("file", file);
-            formData.append('upload_preset', 'taskman');
+           
             fetch(
-              "https://api.Cloudinary.com/v1_1/sium/image/upload",
+              "https://api.Cloudinary.com/v1_1/***/***/upload",
               {
                 method: "POST",
                 body: formData
