@@ -70,7 +70,7 @@ const TextEditor = () => {
     },
     imageResize: {
         parchment: Quill.import('parchment'),
-        modules: ['Resize', 'DisplaySize']
+        modules: ['Resize', 'DisplaySize','Toolbar']
      }
     
     };
